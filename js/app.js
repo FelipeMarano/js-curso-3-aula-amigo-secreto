@@ -6,4 +6,6 @@ function adicionar () {
     } else {
         lista.textContent = lista.textContent + ", " + amigo.value; // quando for adicionar outro nome
     }
+
+    amigo.value = "" // para limpar e colocar outro nome
 }
