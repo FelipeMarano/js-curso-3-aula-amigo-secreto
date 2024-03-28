@@ -15,7 +15,19 @@ function adicionar () {
     amigo.value = "" // para limpar e colocar outro nome
 }
 
-function sortear () {
+function sortear () { 
+    embaralha (amigos); // pegando a função "embaralha" da internet e usando ela na "sortear"
 
+}
 
+function embaralha(lista) { // função pegada na internet
+
+    for (let indice = lista.length; indice; indice--) {
+
+        const indiceAleatorio = Math.floor(Math.random() * indice);
+
+        // atribuição via destructuring
+        [lista[indice - 1], lista[indiceAleatorio]] = 
+            [lista[indiceAleatorio], lista[indice - 1]];
+    }
 }
