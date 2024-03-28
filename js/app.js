@@ -2,6 +2,11 @@ let amigos = []; // criando um array para sortear os nomes
 
 function adicionar () {
     let amigo = document.getElementById ("nome-amigo"); // la no HTML
+    if (amigo.value == "") {
+        alert ("Informe o nome do amigo!"); // caso não tenha nome, dar um alerta
+        return; // para não executar as funções abaixo
+    }
+    
     let lista = document.getElementById ("lista-amigos"); // la no HTML
     
     amigos.push (amigo.value); // para puxar o array e adicionar o "amigo" dentro dele
