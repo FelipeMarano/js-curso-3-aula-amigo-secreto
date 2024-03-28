@@ -21,6 +21,11 @@ function adicionar () {
 }
 
 function sortear () { 
+    if (amigos.length <= 4) { // se o numero de "amigos for menor que 4"
+        alert ("Adicione pelo menos 4 amigos!"); // caso tenha menos que 4 amigos, alertar
+        return; // para nao executar nenhuma função abaixo caso tenha menos que 4 amigos
+    }
+    
     embaralha (amigos); // pegando a função "embaralha" da internet e usando ela na "sortear"
     let sorteio = document.getElementById ("lista-sorteio"); // la no HMTL
     for (let i = 0; i < amigos.length; i++) {  // para ir do começo (0) ate o final do "amigos" (i++ = para ir adicionando mais)
