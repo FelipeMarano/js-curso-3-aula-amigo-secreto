@@ -7,6 +7,11 @@ function adicionar () {
         return; // para não executar as funções abaixo
     }
     
+    if (amigos.includes(amigo.value)) {
+        alert ("Nome já adicionado!"); // caso o nome ja tenha sido adicionado, dar um alerta
+        return; // para não executar as funções abaixo
+    }
+
     let lista = document.getElementById ("lista-amigos"); // la no HTML
     
     amigos.push (amigo.value); // para puxar o array e adicionar o "amigo" dentro dele
