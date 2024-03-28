@@ -40,3 +40,9 @@ function embaralha(lista) { // função pegada na internet para embaralhar os no
             [lista[indiceAleatorio], lista[indice - 1]];
     }
 }
+
+function reiniciar () { // fazer todas as funções para vazio para reiniciar
+    amigos = [];
+    document.getElementById ("lista-amigos") = "";
+    document.getElementById ("lista-sorteio") = "";
+}
